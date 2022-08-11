@@ -80,6 +80,7 @@ function quantityChanged(event){
 }
 // Add to cart 
 function addCartClicked(event){
+    document.getElementById('msg1').innerHTML="Ajouté";
     var button = event.target ;
     var shopProducts = button.parentElement ;
     var title = shopProducts.getElementsByClassName('product-title')[0].innerText ;
